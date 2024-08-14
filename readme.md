@@ -30,7 +30,6 @@ This project is designed to track and predict the progression towards Artificial
    git clone https://github.com/andyg2/Alans-Conservative-Countdown-to-AGI-Chart.git
    cd Alans-Conservative-Countdown-to-AGI-Chart
    ```
-
 2. Install the required packages:
 
    ```
@@ -54,31 +53,36 @@ This will:
 
 ## How it Works
 
-1. **Web Scraping**: The script scrapes data from a specified URL (<https://lifearchitect.ai/agi/>) to get the latest AGI progression percentages.
-
+1. **Web Scraping**: The script scrapes data from a specified URL ([https://lifearchitect.ai/agi/](https://lifearchitect.ai/agi/)) to get the latest AGI progression percentages.
 2. **Data Processing**: The scraped data is processed and converted into a pandas DataFrame for analysis.
-
 3. **Regression Analysis**: A polynomial regression model is fitted to the data to capture the trend of AGI progression.
-
 4. **Prediction**: The model is used to predict when the AGI progression might reach 100%.
-
 5. **Visualization**: A plot is generated showing the actual data points, the regression line, and the prediction for reaching 100%.
 
 ## Output
 
 - A matplotlib plot showing:
+
   - Actual data points of AGI progression
   - Polynomial regression line
   - Prediction line extending into the future
   - Vertical line indicating the predicted 100% date
+
+![](assets/20240814_202845_Figure_1.png)
+
 - Console output including:
+
   - Predicted date for reaching 100% AGI capability
   - R-squared value of the regression model
   - Most recent data point (date and percentage)
 
-## Customization
-
-You can modify the `url` variable in the script to scrape data from a different source, provided the HTML structure is similar.
+```
+Polynomial Regression 100% Date: July 11, 2025
+R-squared value: 0.945
+Most recent data point:
+Date: July 01, 2024
+Percentage: 76.0%
+```
 
 ## Limitations
 
